@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --verde1 : #89D957;
+    --verde2 : #C9E265;
+    --verde-escuro : #182F3B;
+    --card-color: #FFFFFF;
+    --title-color: black;
+    --text-color: #858585;
+
+    --gradient : linear-gradient(to right, var(--verde1), var(--verde2))
+}
+
+main{
+    background-image: var(--gradient);
+    height: 100dvh;
+    width: 100dvw;
+    display: grid;
+    grid-template: 24px 1fr 24px / 24px 1fr 24px;
+}
+
+#login{
+    box-shadow: 1px 1px 30px  rgba(0, 0, 0, 0.389);
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    flex-flow: row nowrap;
+    border-radius: 24px;
+    
+}
+
+#image-section{
+    
+    background-image: var(--gradient);
+    border-radius: 24px 0px 0px 24px;
+    flex: 1 1 45%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    
+}
+
+#fundo-login{
+    flex: 1 1 80%;
+    background: url(../images/fundo-login.png) no-repeat center left / contain;
+}
+
+#form-section{
+   
+    
+    background-color : var(--card-color);
+    border-radius: 0px 24px 24px 0px;
+    background-color: var(--card-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 62pt;
+    flex: 1 1 55%;
+}
+
+#form-field{
+    flex: 0 0 200px;
+}
+
+h1{
+    font-family: "Inter", sans-serif;
+    font-size: 32pt;
+    color: var(--title-color);
+    line-height: 1.5em;
+    text-align: center;
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    font-size: 12pt;
+    color: var(--text-color);
+    line-height: 1.5em;
+    text-align: left;
+}
+
+#login-field{
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: space-evenly;
+
+   height: 90%;
+}
+
+form  label {
+    font-family: "Inter", sans-serif;
+    font-size: 18pt;
+    font-weight: bolder;
+    line-height: 1.5em;
+}
+
+.write{
+    display: block;
+    width: 98%;
+    height: 30px;
+    border-radius: 6pt;
+    border: solid 2px rgb(181, 182, 183);
+    padding: 5px;
+    
+}
+
+#more-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#remember-label{
+    color: var(--title-color);
+    font-size: 12pt;
+    font-weight: normal;
+    line-height: 2em;
+}
+
+#forgot-link{
+    font-family: poppins, sans-serif;
+    color: var(--verde1);
+    font-size: 12pt;
+    line-height: 2em;
+}
+
+#submit-button{
+    width: 98%;
+    height: 40px;
+    border-radius: 6pt;
+    background-image: var(--gradient);
+    color: var(--card-color);
+    font-family: "Inter", sans-serif;
+    font-size: 16pt;
+    font-weight: bolder;
+    line-height: 1.5em;
+    border: none;
+    margin: 10px;
+}
+
+#criar-conta{
+    align-self: center;
+}
+
+#criar-conta a{
+    font-family: "Poppins", sans-serif;
+    color: var(--verde1);
+    font-size: 12pt;
+    line-height: 2em;
+}

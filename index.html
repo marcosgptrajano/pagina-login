@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <section id="login"> 
+            
+            <section id="image-section">
+                <div id="fundo-login">
+                </div>
+                <div id="credito">
+                    <div><img src="" alt=""></div>
+                    <div></div>
+                </div>
+            </section>
+            <section id="form-section">
+                <article id="login-field">
+                    <div>
+                        <h1> Bem-Vindo</h1>
+                        <p>Faça login para acessar os dados da sua conta e utilizar a plataforma.</p>
+                    </div>
+            
+                    <form action="Login.py" method="post">
+                        <div>
+                            <label for="iemail">Email</label>
+                            <input type="email" name="email" id="iemail" class="write" placeholder="Coloque seu email" required>
+                        </div>
+
+                        <div>
+                            <label for="isenha">Senha</label>
+                            <input type="password" name="senha" id="isenha" class="write" placeholder="Coloque sua senha" required>
+                        </div>
+
+                        <div id="more-options">
+                            <div>
+                                <input type="checkbox" name="" id="iremember" value="true">
+                                <label for="iremember" id="remember-label">Mantenha-me conectado</label >
+                            </div>
+                            <a href="pages/forgot.html" id="forgot-link">Enqueci a senha</a>   
+                        </div>
+
+                        <div>
+                            <input type="submit" value="Entrar" id="submit-button">
+                        </div>
+                    </form>
+
+                    <div  id="criar-conta">
+                        <p>Ainda não tem uma conta? <a href="pages/cadastro.html">Cadastre-se</a></p>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
