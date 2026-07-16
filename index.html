@@ -28,18 +28,29 @@
                     <form action="Login.py" method="post">
                         <div>
                             <label for="iemail">Email</label>
-                            <input type="email" name="email" id="iemail" class="write" placeholder="Coloque seu email" required>
+                            <div class="write-container">
+                                <div class="icon">
+                                    <i class="fa-solid fa-at"></i>
+                                </div>
+                                <input type="email" name="email" id="iemail" class="write" placeholder="Coloque seu email" required>
+                            </div>
                         </div>
 
-                        <div>
+                        <div >
                             <label for="isenha">Senha</label>
-                            <input type="password" name="senha" id="isenha" class="write" placeholder="Coloque sua senha" required>
+                            <div class="write-container">
+                                <div class="icon">
+                                    <i class="fa-solid fa-key"></i>
+                                </div>
+                                <input type="password" name="senha" id="isenha" class="write" placeholder="Coloque sua senha" required>
+                            </div>
+                            
                         </div>
 
                         <div id="more-options">
                             <div>
                                 <input type="checkbox" name="" id="iremember" value="true">
-                                <label for="iremember" id="remember-label">Mantenha-me conectado</label >
+                                <label for="iremember" id="remember-label">Mantenha-me conectado</label>
                             </div>
                             <a href="pages/forgot.html" id="forgot-link">Enqueci a senha</a>   
                         </div>
@@ -56,5 +67,7 @@
             </section>
         </section>
     </main>
+
+    <script src="https://kit.fontawesome.com/ba5849ca46.js" crossorigin="anonymous"></script>
 </body>
 </html>

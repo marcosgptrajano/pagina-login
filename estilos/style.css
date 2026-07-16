@@ -83,12 +83,16 @@ p{
     line-height: 1.5em;
     text-align: left;
 }
+form{
+    width: 100%;
+}
+
 
 #login-field{
    display: flex;
    flex-flow: column nowrap;
    justify-content: space-evenly;
-
+    align-content: center;
    height: 90%;
 }
 
@@ -99,13 +103,26 @@ form  label {
     line-height: 1.5em;
 }
 
-.write{
-    display: block;
-    width: 98%;
-    height: 30px;
-    border-radius: 6pt;
+.write-container{
+    display: flex;
+    height: 50px;
     border: solid 2px rgb(181, 182, 183);
-    padding: 5px;
+    border-radius: 6pt;
+    width: 100%;
+}
+.icon{
+    margin: 10px;
+
+    font-size: 1.6em;
+}
+.write{
+    height: 28px;
+    padding: 10px;
+    border-radius: 6pt;
+    border: none;
+    width: 89%;
+    display: inline-block;
+    font-size: 12pt;
     
 }
 
@@ -130,7 +147,7 @@ form  label {
 
 #submit-button{
     width: 98%;
-    height: 40px;
+    height: 50px;
     border-radius: 6pt;
     background-image: var(--gradient);
     color: var(--card-color);
@@ -140,6 +157,10 @@ form  label {
     line-height: 1.5em;
     border: none;
     margin: 10px;
+}
+
+#submit-button:hover{
+    cursor: pointer;
 }
 
 #criar-conta{
