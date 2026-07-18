@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+main{
+    grid-template: 4.5fr auto 4.5fr /30% auto 30% ;
+}
+
+section{
+    background-color: var(--card-color);
+    grid-area: 2 / 2 / 3 / 3;
+    border-radius: 24px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.192);
+    padding: 24pt;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#icon{
+    background-image: var(--gradient);
+    padding: 10px;
+    font-size: 28pt;
+    border-radius: 50%;
+    width: 80px;
+    height: 76px;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.write{
+    width: 98.5%;
+    height: 70%;
+    padding: 8px;
+}
+
+#back{
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: darkolivegreen;
+}

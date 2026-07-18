@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Esqueci a senha</title>
+
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/forgot.css">
 </head>
 <body>
-    
+    <main>
+        
+        <section>
+            <a href="../index.html" id="back">
+                 <div><i class="fa-solid fa-angle-left"></i>Voltar</div>
+             </a>
+            <div id="icon"> 
+                <i class="fa-solid fa-key"></i> 
+            </div>
+            <h1>Esqueceu a senha?</h1>
+            <p>Sem problemas! Informe o email vinculado a sua conta que mandaremos um link de recuperação</p>
+            <form method="post">
+                <label for="imail">Email</label>
+                <div class="write-container">
+                    <input type="email" name="mail" id="imail" class="write" required placeholder="Seu email cadastrado">
+                </div>
+                <input type="submit" value="Enviar" id="submit-button">
+            </form>
+             
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/ba5849ca46.js" crossorigin="anonymous"></script>
 </body>
 </html>

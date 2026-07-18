@@ -1,2 +1,52 @@
 @charset "UTF-8";
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#cadastro{
+    order: -1;
+    background-color: white;
+    border-radius: 24pt 0 0 24pt;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 70pt;
+    flex: 1 1 55%;
+}
+
+#imagem{
+    background : url(../images/fundo-cadastro.jpeg) no-repeat center center / cover;
+    width: 45%;
+    border-radius: 0 24pt 24pt 0;
+}
+
+
+form  div{
+    display: flex;
+    flex-flow: column wrap;
+    height: 100px;
+    gap: 10px;
+   
+
+}
+
+form > div{
+ margin-bottom: 5px;
+}
+
+
+
+.write-container{
+    width: 50%;
+    
+}
+
+.write{
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+

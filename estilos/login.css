@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+
+
+
+#image-section{
+    
+    background-image: var(--gradient);
+    border-radius: 24px 0px 0px 24px;
+    flex: 1 1 45%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    
+}
+
+#fundo-login{
+    flex: 1 1 80%;
+    background: url(../images/fundo-login.png) no-repeat center left / contain;
+}
+
+#form-section{
+    
+    background-color : var(--card-color);
+    border-radius: 0px 24px 24px 0px;
+    background-color: var(--card-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 62pt;
+    flex: 1 1 55%;
+}
+
+#form-field{
+    flex: 0 0 200px;
+}
+
+
+form{
+    width: 100%;
+}
+
+
+
+
+
+
+
+.icon{
+    margin: 10px;
+
+    font-size: 1.6em;
+}
+
+
+#more-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#remember-label{
+    color: var(--title-color);
+    font-size: 12pt;
+    font-weight: normal;
+    line-height: 2em;
+}
+
+#forgot-link{
+    font-family: poppins, sans-serif;
+    color: var(--verde1);
+    font-size: 12pt;
+    line-height: 2em;
+}
+
+
+
