@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="../estilos/style.css">
     <link rel="stylesheet" href="estilos/telas-pequenas.css" media="screen and (max-width: 768px)">
 </head>
-<body>
-    <main>
+<body id="index-body">
+    <main> 
         <section id="container"> 
             
             <section id="image-section">
@@ -46,7 +46,8 @@
                                 <div class="icon">
                                     <i class="fa-solid fa-key"></i>
                                 </div>
-                                <input type="password" name="senha" id="isenha" class="write" placeholder="Coloque sua senha" required>
+                                <input type="password" name="senha" id="ipass" class="write" placeholder="Coloque sua senha" required>
+                                <div id="hide"><i class="fa-solid fa-eye"></i></div>
                             </div>
                             
                         </div>
@@ -73,5 +74,6 @@
     </main>
 
     <script src="https://kit.fontawesome.com/ba5849ca46.js" crossorigin="anonymous"></script>
+    <script src="scripts/password.js"></script>
 </body>
 </html>

@@ -1,10 +1,18 @@
 @charset "UTF-8";
 
 main{
-    grid-template:  1fr/ 1fr;
-    width: 100%;
-    height: 100dvh;
+    grid-template:  100vh/ auto;
+    width: 95%;
+    height: 100%;
 
+}
+#index-body{
+    width: 100dvw;
+}
+body{
+    display: flex;
+    width: 100dvw;
+    height: 100dvh;
 }
 
 #container{
@@ -18,7 +26,7 @@ main{
 }
 
 #image-section{
-    border-radius: 10px;
+    border-radius: 0pt 0pt 24pt 24pt;
     z-index: 10;
 }
 
@@ -31,7 +39,6 @@ main{
     background:  no-repeat center center / 75% auto;
    
 }
-
 
 
 
@@ -67,3 +74,12 @@ form label{
 #remember-label, #forgot-link {
     font-size: 8pt;
 }
+
+
+#cadastro-body{
+    display: flex;
+    width: 100dvw;
+    height: 100dvh;
+    justify-content: center;
+}
+

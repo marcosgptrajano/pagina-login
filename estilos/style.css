@@ -31,10 +31,14 @@ p{
     line-height: 1.5em;
     text-align: left;
 }
-
-main{
-    width: 100dvw;
+body{
+    display: flex;
+    width: 98dvw;
     height: 100dvh;
+}
+main{
+    flex-basis: 100%;
+    height: 100%;
     background-image: var(--gradient);
     display: grid;
     grid-template: 24pt 1fr 24px / 24px 2fr 1fr 24px;
@@ -111,5 +115,16 @@ form  label {
 }
 
 #submit-button:hover{
+    cursor: pointer;
+}
+
+#hide{
+    align-self: center;
+    padding: 10px;
+}
+
+
+
+#hide:hover{
     cursor: pointer;
 }

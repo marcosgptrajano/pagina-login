@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+body{
+    display: flex;
+    width: 100dvw;
+    height: 100dvh;
+}
 main{
     grid-template: 4.5fr auto 4.5fr /30% auto 30% ;
 }
@@ -12,6 +17,7 @@ section{
     padding: 24pt;
     display: flex;
     flex-flow: column nowrap;
+    gap: 12pt;
 }
 
 #icon{
@@ -26,6 +32,8 @@ section{
     margin: auto;
 }
 
+
+
 .write{
     width: 98.5%;
     height: 70%;
@@ -37,3 +45,22 @@ section{
     font-weight: bold;
     color: darkolivegreen;
 }
+
+#submit-button{
+    margin-top: 12pt;
+}
+
+@media screen and (max-width: 768px){
+    main{
+        grid-template: 15dvh 1fr 15dvh/ 24pt auto 24pt ;
+    }
+
+    h1{
+    font-size: 18pt;
+}
+    p{
+  
+        font-size: 10pt;
+    }   
+}
+

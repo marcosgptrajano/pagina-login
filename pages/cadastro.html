@@ -7,15 +7,16 @@
     
     <link rel="stylesheet" href="../estilos/style.css">
     <link rel="stylesheet" href="../estilos/cadastro.css">
+    <link rel="stylesheet" href="../estilos/telas-pequenas.css" media="screen and (max-width: 768px)">
 </head>
-<body>
+<body id="cadastro-body">
     <main>
         <article id="container">
             <section id="imagem">
-            
+                <img src="../images/logo.png" alt="" id="logo">
             </section>
             <section id="cadastro">
-
+                
                 <article id="field">
 
                     <div>
@@ -38,7 +39,7 @@
                             <label for="itel">Telefone</label>
                             
                             <div class="write-container">
-                                <input type="tel" name="tel" id="itel" class="write" placeholder="(XX) XXXXX-XXXX" required></div>
+                                <input type="tel" name="tel" id="itel" class="write" placeholder="(XX) XXXXX-XXXX" required minlength="11" maxlength="11"></div>
                             <label for="iemail">Email</label>
                             <div class="write-container">
                                 <input type="email" name="email" id="iemail" class="write" placeholder="Seu email" required></div>
@@ -47,13 +48,19 @@
                         <div>
                             <label for="ipass">Senha</label>
                             <div class="write-container">
+                                
                                 <input type="password" name="pass" id="ipass" class="write" required>
                             </div>
                             <label for="irpass">Repita a senha</label>
                             <div class="write-container">
-                                <input type="password" name="rpass" id="irpass" class="write" required>
+                                <input type="password" name="rpass" id="irpass" class="write" required minlength="8">
+                                
                             </div>
+                            
                         </div>
+                        
+                            <p id="error"></p>
+                    
                         <input type="submit" value="Registar" id="submit-button">
                     </form>
 
@@ -64,5 +71,7 @@
             </section>
         </article>
     </main>
+    <script src="https://kit.fontawesome.com/ba5849ca46.js" crossorigin="anonymous"></script>
+    <script src="../scripts/cadastro.js"></script>
 </body>
 </html>

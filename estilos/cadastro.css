@@ -5,6 +5,9 @@
     padding: 0;
 }
 
+#logo{
+    display: none;
+}
 
 #cadastro{
     order: -1;
@@ -13,7 +16,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    padding: 70pt;
+    padding: 40pt ;
     flex: 1 1 55%;
 }
 
@@ -23,6 +26,10 @@
     border-radius: 0 24pt 24pt 0;
 }
 
+
+main{
+    height: 100%;
+}
 
 form  div{
     display: flex;
@@ -49,4 +56,50 @@ form > div{
     height: 95%;
     padding: 2.5%;
 }
+
+
+@media screen and (max-width: 768px){
+
+    
+    #imagem{
+        grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
+        border-radius: 0 0 24pt 24pt;
+    }
+
+    #cadastro{
+        grid-area: 2 / 1 / 3 / -2;
+        padding: 24pt 24pt 64pt 24pt;
+    }
+    .write-container{
+        width: 100%;
+        
+    }
+
+    form > div{
+        display: flex;
+        flex-flow: column nowrap;
+        height: 200px;
+
+        
+    }
+    #logo{
+    display: block !important;
+    left: 50%;
+    transform: translate(-50%);
+    top: 14%;
+    position: absolute;
+    width: 150px;
+    overflow: visible;
+    z-index: 1000;
+    }
+}
+
+#error{
+    text-align: right;
+    color: red;
+}
+
+
+
 
