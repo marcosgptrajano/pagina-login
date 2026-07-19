@@ -19,6 +19,9 @@
     background: url(../images/fundo-login.png) no-repeat center left / contain;
 }
 
+#fundo-login img{
+    display: none !important;
+}
 #form-section{
     
     background-color : var(--card-color);
